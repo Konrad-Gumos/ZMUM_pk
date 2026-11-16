@@ -1,0 +1,659 @@
+{
+  "n_raw": 10810654,
+  "n_scope": 7745790,
+  "dup_id": 0,
+  "dup_full": 0,
+  "ft_upper": 1953445,
+  "err_mt": 9465,
+  "err_fc": 235225,
+  "k_fuel": {
+    "diesel": 26.23,
+    "petrol": 22.66
+  },
+  "iqr_share": {
+    "M (kg)": 2.96,
+    "Mt": 3.95,
+    "Ec (cm3)": 1.09,
+    "Ep (KW)": 7.66,
+    "Ewltp (g/km)": 6.3,
+    "Fuel consumption": 4.89,
+    "real_fuel_consumption": 4.54
+  },
+  "iqr_any_share": 10.810905020662839,
+  "n_removed_physical": 21060,
+  "n_clean": 7724730,
+  "split_tab": {
+    "split": [
+      "train",
+      "val",
+      "test"
+    ],
+    "wiersze": [
+      5167110,
+      1444907,
+      1112713
+    ],
+    "udział_%": [
+      66.89,
+      18.7,
+      14.4
+    ],
+    "modele (grupy)": [
+      4413,
+      514,
+      971
+    ]
+  },
+  "same_x_val": 33.59690277644167,
+  "same_x_test": 52.38987951070941,
+  "target_train": {
+    "mean": 7.152817471358478,
+    "median": 6.775076166692627,
+    "std": 1.8990024782977244,
+    "skew": 2.6351082290832983,
+    "q01": 4.564692517710213,
+    "q99": 14.782604150377184,
+    "gap_mean": 1.1664988908303637,
+    "gap_median": 1.0207468173007186,
+    "share_above_wltp": 85.34327699623194
+  },
+  "skew": {
+    "M (kg)": {
+      "skośność": 0.78,
+      "skośność po log": 0.27
+    },
+    "Mt": {
+      "skośność": 0.92,
+      "skośność po log": 0.38
+    },
+    "Ec (cm3)": {
+      "skośność": 1.64,
+      "skośność po log": 0.3
+    },
+    "Ep (KW)": {
+      "skośność": 2.65,
+      "skośność po log": 0.78
+    },
+    "Ewltp (g/km)": {
+      "skośność": 2.17,
+      "skośność po log": 1.13
+    },
+    "Fuel consumption": {
+      "skośność": 2.57,
+      "skośność po log": 1.34
+    },
+    "real_fuel_consumption": {
+      "skośność": 2.64,
+      "skośność po log": 1.06
+    }
+  },
+  "cat_summary": {
+    "Ft": {
+      "liczba kategorii": 2,
+      "udział najczęstszej_%": 63.9
+    },
+    "Fm": {
+      "liczba kategorii": 2,
+      "udział najczęstszej_%": 62.9
+    },
+    "Cr": {
+      "liczba kategorii": 2,
+      "udział najczęstszej_%": 95.2
+    },
+    "Country": {
+      "liczba kategorii": 29,
+      "udział najczęstszej_%": 29.5
+    },
+    "Mk": {
+      "liczba kategorii": 146,
+      "udział najczęstszej_%": 13.8
+    },
+    "vehicle_age": {
+      "liczba kategorii": 4,
+      "udział najczęstszej_%": 30.2
+    }
+  },
+  "rare_mk": 109,
+  "country_median_range": [
+    6.018323210879887,
+    8.829491932526961
+  ],
+  "corr_pearson_target": {
+    "M (kg)": 0.467,
+    "Mt": 0.469,
+    "Ec (cm3)": 0.509,
+    "Ep (KW)": 0.731,
+    "Ewltp (g/km)": 0.808,
+    "Fuel consumption": 0.866,
+    "vehicle_age": -0.032,
+    "real_fuel_consumption": 1.0
+  },
+  "corr_spearman_target": {
+    "M (kg)": 0.345,
+    "Mt": 0.351,
+    "Ec (cm3)": 0.226,
+    "Ep (KW)": 0.485,
+    "Ewltp (g/km)": 0.697,
+    "Fuel consumption": 0.798,
+    "vehicle_age": -0.038,
+    "real_fuel_consumption": 1.0
+  },
+  "missing_train": {
+    "M (kg)": {
+      "braki": 1,
+      "braki_%": 0.0
+    },
+    "Mt": {
+      "braki": 28070,
+      "braki_%": 0.543
+    },
+    "Ec (cm3)": {
+      "braki": 60,
+      "braki_%": 0.001
+    },
+    "Ep (KW)": {
+      "braki": 4748,
+      "braki_%": 0.092
+    },
+    "Fuel consumption": {
+      "braki": 486845,
+      "braki_%": 9.422
+    },
+    "Cr": {
+      "braki": 2,
+      "braki_%": 0.0
+    }
+  },
+  "fc_missing_by_year": {
+    "2021": 27.59,
+    "2022": 4.52,
+    "2023": 2.52,
+    "2024": 1.79
+  },
+  "imputation": [
+    {
+      "metoda": "średnia",
+      "kolumna": "Fuel consumption",
+      "MAE": 0.946,
+      "RMSE": 1.409,
+      "std po / std przed": 0.8956,
+      "KS (rozkład)": 0.1299,
+      "czas_s": 0.0514
+    },
+    {
+      "metoda": "średnia",
+      "kolumna": "Ep (KW)",
+      "MAE": 39.2731,
+      "RMSE": 60.7681,
+      "std po / std przed": 0.8931,
+      "KS (rozkład)": 0.1348,
+      "czas_s": 0.076
+    },
+    {
+      "metoda": "średnia",
+      "kolumna": "Mt",
+      "MAE": 262.6199,
+      "RMSE": 340.5593,
+      "std po / std przed": 0.8942,
+      "KS (rozkład)": 0.117,
+      "czas_s": 0.1041
+    },
+    {
+      "metoda": "mediana",
+      "kolumna": "Fuel consumption",
+      "MAE": 0.9051,
+      "RMSE": 1.4416,
+      "std po / std przed": 0.8999,
+      "KS (rozkład)": 0.0977,
+      "czas_s": 0.0481
+    },
+    {
+      "metoda": "mediana",
+      "kolumna": "Ep (KW)",
+      "MAE": 37.6599,
+      "RMSE": 61.9027,
+      "std po / std przed": 0.896,
+      "KS (rozkład)": 0.0962,
+      "czas_s": 0.077
+    },
+    {
+      "metoda": "mediana",
+      "kolumna": "Mt",
+      "MAE": 256.5179,
+      "RMSE": 346.9857,
+      "std po / std przed": 0.8973,
+      "KS (rozkład)": 0.1008,
+      "czas_s": 0.1052
+    },
+    {
+      "metoda": "dominanta",
+      "kolumna": "Fuel consumption",
+      "MAE": 0.9831,
+      "RMSE": 1.5755,
+      "std po / std przed": 0.9178,
+      "KS (rozkład)": 0.1315,
+      "czas_s": 0.0396
+    },
+    {
+      "metoda": "dominanta",
+      "kolumna": "Ep (KW)",
+      "MAE": 37.9343,
+      "RMSE": 60.952,
+      "std po / std przed": 0.8935,
+      "KS (rozkład)": 0.1032,
+      "czas_s": 0.0669
+    },
+    {
+      "metoda": "dominanta",
+      "kolumna": "Mt",
+      "MAE": 266.6339,
+      "RMSE": 369.5592,
+      "std po / std przed": 0.9094,
+      "KS (rozkład)": 0.1246,
+      "czas_s": 0.094
+    },
+    {
+      "metoda": "KNN (k=5)",
+      "kolumna": "Fuel consumption",
+      "MAE": 0.0592,
+      "RMSE": 0.1449,
+      "std po / std przed": 0.9977,
+      "KS (rozkład)": 0.0029,
+      "czas_s": 36.1096
+    },
+    {
+      "metoda": "KNN (k=5)",
+      "kolumna": "Ep (KW)",
+      "MAE": 5.0993,
+      "RMSE": 11.5867,
+      "std po / std przed": 0.9974,
+      "KS (rozkład)": 0.0224,
+      "czas_s": 36.1545
+    },
+    {
+      "metoda": "KNN (k=5)",
+      "kolumna": "Mt",
+      "MAE": 15.3729,
+      "RMSE": 26.0537,
+      "std po / std przed": 0.9988,
+      "KS (rozkład)": 0.0016,
+      "czas_s": 36.177
+    },
+    {
+      "metoda": "MICE (BayesianRidge)",
+      "kolumna": "Fuel consumption",
+      "MAE": 0.2619,
+      "RMSE": 0.321,
+      "std po / std przed": 0.995,
+      "KS (rozkład)": 0.0166,
+      "czas_s": 0.3792
+    },
+    {
+      "metoda": "MICE (BayesianRidge)",
+      "kolumna": "Ep (KW)",
+      "MAE": 16.5229,
+      "RMSE": 23.0558,
+      "std po / std przed": 0.9851,
+      "KS (rozkład)": 0.0167,
+      "czas_s": 0.421
+    },
+    {
+      "metoda": "MICE (BayesianRidge)",
+      "kolumna": "Mt",
+      "MAE": 26.3207,
+      "RMSE": 38.397,
+      "std po / std przed": 0.9984,
+      "KS (rozkład)": 0.0046,
+      "czas_s": 0.4336
+    }
+  ],
+  "imputation_downstream": [
+    {
+      "metoda": "średnia",
+      "MAE": 0.6216,
+      "RMSE": 0.9371,
+      "MedAE": 0.4632,
+      "MAPE_%": 8.8549,
+      "R2": 0.6539,
+      "bias": -0.1257,
+      "czas_s": 1.3603
+    },
+    {
+      "metoda": "mediana",
+      "MAE": 0.6216,
+      "RMSE": 0.9371,
+      "MedAE": 0.4632,
+      "MAPE_%": 8.8549,
+      "R2": 0.6539,
+      "bias": -0.1257,
+      "czas_s": 1.2909
+    },
+    {
+      "metoda": "dominanta",
+      "MAE": 0.6216,
+      "RMSE": 0.9371,
+      "MedAE": 0.4632,
+      "MAPE_%": 8.8549,
+      "R2": 0.6539,
+      "bias": -0.1257,
+      "czas_s": 1.2346
+    },
+    {
+      "metoda": "KNN (k=5)",
+      "MAE": 0.6197,
+      "RMSE": 0.9352,
+      "MedAE": 0.4612,
+      "MAPE_%": 8.8281,
+      "R2": 0.6553,
+      "bias": -0.1231,
+      "czas_s": 87.5732
+    },
+    {
+      "metoda": "MICE (BayesianRidge)",
+      "MAE": 0.6198,
+      "RMSE": 0.9355,
+      "MedAE": 0.4615,
+      "MAPE_%": 8.8276,
+      "R2": 0.6551,
+      "bias": -0.1238,
+      "czas_s": 1.8583
+    }
+  ],
+  "baselines_val": [
+    {
+      "model": "Stała (mediana)",
+      "MAE": 1.0604,
+      "RMSE": 1.5774,
+      "MedAE": 0.7728,
+      "MAPE_%": 15.4026,
+      "R2": -0.0,
+      "bias": -0.0015,
+      "czas_s": 0.2619
+    },
+    {
+      "model": "Katalog WLTP",
+      "MAE": 1.2302,
+      "RMSE": 1.5338,
+      "MedAE": 1.0905,
+      "MAPE_%": 17.1745,
+      "R2": 0.0546,
+      "bias": -1.2059,
+      "czas_s": 0.1984
+    },
+    {
+      "model": "Skorygowany WLTP",
+      "MAE": 0.6393,
+      "RMSE": 0.9431,
+      "MedAE": 0.4827,
+      "MAPE_%": 9.1431,
+      "R2": 0.6426,
+      "bias": -0.1162,
+      "czas_s": 9.788
+    },
+    {
+      "model": "Regresja liniowa",
+      "MAE": 0.6184,
+      "RMSE": 0.9182,
+      "MedAE": 0.4631,
+      "MAPE_%": 8.8229,
+      "R2": 0.6611,
+      "bias": -0.1289,
+      "czas_s": 179.4512
+    },
+    {
+      "model": "HistGradientBoosting",
+      "MAE": 0.5863,
+      "RMSE": 0.8708,
+      "MedAE": 0.443,
+      "MAPE_%": 8.4632,
+      "R2": 0.6952,
+      "bias": -0.0316,
+      "czas_s": 242.8803
+    }
+  ],
+  "wltp_corrected_coef": {
+    "diesel/H": [
+      0.6406947775739713,
+      1.0909645746727303
+    ],
+    "diesel/M": [
+      0.3746452940786975,
+      1.1027284152057553
+    ],
+    "petrol/H": [
+      0.09026795049803038,
+      1.1939536412397005
+    ],
+    "petrol/M": [
+      -0.0008119536473376598,
+      1.1920618404462366
+    ]
+  },
+  "seg_err_val": {
+    "diesel/H": {
+      "abs_err": 0.6995,
+      "abs_err_wltp": 0.7684
+    },
+    "diesel/M": {
+      "abs_err": 0.5117,
+      "abs_err_wltp": 0.5211
+    },
+    "petrol/H": {
+      "abs_err": 0.5708,
+      "abs_err_wltp": 0.624
+    },
+    "petrol/M": {
+      "abs_err": 0.6222,
+      "abs_err_wltp": 0.6916
+    }
+  },
+  "oracle_mae_val": 0.5240433438926071,
+  "seeds": {
+    "Skorygowany WLTP": {
+      "count": 5.0,
+      "mean": 0.6451840631613524,
+      "std": 0.017943015220938798,
+      "min": 0.6262265197213713,
+      "25%": 0.6264182148604872,
+      "50%": 0.6500515093701146,
+      "75%": 0.6590809241018651,
+      "max": 0.664143147752924
+    },
+    "HistGradientBoosting": {
+      "count": 5.0,
+      "mean": 0.5972235715362679,
+      "std": 0.017169229815440112,
+      "min": 0.574602406803682,
+      "25%": 0.586617721605711,
+      "50%": 0.59733436126597,
+      "75%": 0.6119686462306336,
+      "max": 0.6155947217753432
+    }
+  },
+  "seeds_gain_mean": 0.04796049162508449,
+  "seeds_gain_min": 0.010631797946028088,
+  "learning_curve": [
+    {
+      "frac": 0.01,
+      "n_train": 10797,
+      "n_models": 44,
+      "model": "Skorygowany WLTP",
+      "MAE_val": 0.6816,
+      "MAE_train": 0.8562,
+      "czas_s": 0.9696
+    },
+    {
+      "frac": 0.01,
+      "n_train": 10797,
+      "n_models": 44,
+      "model": "Regresja liniowa",
+      "MAE_val": 0.813,
+      "MAE_train": 0.8271,
+      "czas_s": 2.1487
+    },
+    {
+      "frac": 0.01,
+      "n_train": 10797,
+      "n_models": 44,
+      "model": "HistGradientBoosting",
+      "MAE_val": 0.7319,
+      "MAE_train": 0.7894,
+      "czas_s": 2.7339
+    },
+    {
+      "frac": 0.05,
+      "n_train": 288766,
+      "n_models": 221,
+      "model": "Skorygowany WLTP",
+      "MAE_val": 0.6727,
+      "MAE_train": 0.6813,
+      "czas_s": 1.8988
+    },
+    {
+      "frac": 0.05,
+      "n_train": 288766,
+      "n_models": 221,
+      "model": "Regresja liniowa",
+      "MAE_val": 0.6719,
+      "MAE_train": 0.6507,
+      "czas_s": 6.8619
+    },
+    {
+      "frac": 0.05,
+      "n_train": 288766,
+      "n_models": 221,
+      "model": "HistGradientBoosting",
+      "MAE_val": 0.6452,
+      "MAE_train": 0.6084,
+      "czas_s": 12.0452
+    },
+    {
+      "frac": 0.2,
+      "n_train": 1039483,
+      "n_models": 883,
+      "model": "Skorygowany WLTP",
+      "MAE_val": 0.6466,
+      "MAE_train": 0.6429,
+      "czas_s": 2.7748
+    },
+    {
+      "frac": 0.2,
+      "n_train": 1039483,
+      "n_models": 883,
+      "model": "Regresja liniowa",
+      "MAE_val": 0.637,
+      "MAE_train": 0.6207,
+      "czas_s": 21.0928
+    },
+    {
+      "frac": 0.2,
+      "n_train": 1039483,
+      "n_models": 883,
+      "model": "HistGradientBoosting",
+      "MAE_val": 0.6343,
+      "MAE_train": 0.5632,
+      "czas_s": 36.8645
+    },
+    {
+      "frac": 0.5,
+      "n_train": 2591578,
+      "n_models": 2206,
+      "model": "Skorygowany WLTP",
+      "MAE_val": 0.6445,
+      "MAE_train": 0.6855,
+      "czas_s": 6.2942
+    },
+    {
+      "frac": 0.5,
+      "n_train": 2591578,
+      "n_models": 2206,
+      "model": "Regresja liniowa",
+      "MAE_val": 0.628,
+      "MAE_train": 0.6612,
+      "czas_s": 87.1452
+    },
+    {
+      "frac": 0.5,
+      "n_train": 2591578,
+      "n_models": 2206,
+      "model": "HistGradientBoosting",
+      "MAE_val": 0.6178,
+      "MAE_train": 0.6086,
+      "czas_s": 120.7295
+    },
+    {
+      "frac": 1.0,
+      "n_train": 5167110,
+      "n_models": 4413,
+      "model": "Skorygowany WLTP",
+      "MAE_val": 0.6405,
+      "MAE_train": 0.6705,
+      "czas_s": 12.127
+    },
+    {
+      "frac": 1.0,
+      "n_train": 5167110,
+      "n_models": 4413,
+      "model": "Regresja liniowa",
+      "MAE_val": 0.6197,
+      "MAE_train": 0.6551,
+      "czas_s": 168.3135
+    },
+    {
+      "frac": 1.0,
+      "n_train": 5167110,
+      "n_models": 4413,
+      "model": "HistGradientBoosting",
+      "MAE_val": 0.5873,
+      "MAE_train": 0.5938,
+      "czas_s": 242.6822
+    }
+  ],
+  "baselines_test": [
+    {
+      "model": "Stała (mediana)",
+      "MAE": 1.1904,
+      "RMSE": 1.7443,
+      "MedAE": 0.8691,
+      "MAPE_%": 15.6215,
+      "R2": -0.0691,
+      "bias": -0.4435
+    },
+    {
+      "model": "Katalog WLTP",
+      "MAE": 1.1608,
+      "RMSE": 1.4834,
+      "MedAE": 0.986,
+      "MAPE_%": 15.0783,
+      "R2": 0.2268,
+      "bias": -1.1204
+    },
+    {
+      "model": "Skorygowany WLTP",
+      "MAE": 0.6901,
+      "RMSE": 0.9523,
+      "MedAE": 0.5442,
+      "MAPE_%": 9.5326,
+      "R2": 0.6814,
+      "bias": 0.0533
+    },
+    {
+      "model": "Regresja liniowa",
+      "MAE": 0.6593,
+      "RMSE": 0.9202,
+      "MedAE": 0.51,
+      "MAPE_%": 9.0018,
+      "R2": 0.7025,
+      "bias": -0.0219
+    },
+    {
+      "model": "HistGradientBoosting",
+      "MAE": 0.6135,
+      "RMSE": 0.8614,
+      "MedAE": 0.4688,
+      "MAPE_%": 8.3734,
+      "R2": 0.7393,
+      "bias": -0.0225
+    }
+  ]
+}
