@@ -1,0 +1,10 @@
+2024_Cars_Raw.csv
+.venv/
+.ipynb_checkpoints/
+__pycache__/
+raport/*.aux
+raport/*.log
+raport/*.bbl
+raport/*.blg
+raport/*.out
+raport/figures/*.png
